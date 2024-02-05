@@ -19,8 +19,8 @@ export default function StickyNavbar() {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
+    <ul className="mt-2 mb-4 flex gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -59,7 +59,18 @@ export default function StickyNavbar() {
         <a href="#" className="flex items-center">
           Docs
         </a>
-      </Typography>
+      </Typography> */}
+      {/* <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className=" font-normal ml-[5"
+      >
+        <a href="/register" className="flex items-center text-black font-semibold bg-green-200 p-2 rounded-lg hover:bg-green-300 mb-2">
+          Register Now
+        </a>
+      </Typography> */}
+      <li className="bg-black p-2 text-xs rounded-lg mb-1 cursor-pointer font-semibold"><a href="/register">Sign Up</a></li>
     </ul>
   );
  
@@ -70,7 +81,7 @@ export default function StickyNavbar() {
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium text-2xl"
+            className="mr-4 cursor-pointer py-1.5 font-medium text-2xl font-Logo"
           >
             Paysa
           </Typography>
