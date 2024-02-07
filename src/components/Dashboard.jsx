@@ -9,6 +9,7 @@ import Loan from '../Images/loan.png'
 import Data from '../Images/data-visualization.jpg'
 import Transactions from '../Images/Transactions.jpg'
 import Comparison from '../Images/Comparison.png'
+import {Link} from 'react-router-dom'
 
 const Dashboard = () => {
   return (
@@ -19,7 +20,7 @@ const Dashboard = () => {
         <h1 className='w-fit mx-auto text-7xl font-bold text-blue-900 pt-5 font-Dashboard'>Dashboard</h1>
       </div>
       <div className='grid grid-cols-2 w-fit mx-auto'>
-      <Card sx={{ maxWidth: 345 }} className='m-[50px]'>
+      <Link to='/loan'><Card sx={{ maxWidth: 345 }} className='m-[50px]'>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -36,8 +37,8 @@ const Dashboard = () => {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-    <Card sx={{ maxWidth: 345 }} className='m-[50px]'>
+    </Card></Link>
+    <Link to="/data"><Card sx={{ maxWidth: 345 }} className='m-[50px]'>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -54,8 +55,8 @@ const Dashboard = () => {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-    <Card sx={{ maxWidth: 345 }} className='m-[50px]'>
+    </Card></Link>
+    <Link to="/transactions"><Card sx={{ maxWidth: 345 }} className='m-[50px]'>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -72,8 +73,8 @@ const Dashboard = () => {
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
-    <Card sx={{ maxWidth: 345 }} className='m-[50px]'>
+    </Card></Link>
+    <Link to="/comparison"><Card sx={{ maxWidth: 345 }} className='m-[50px]'>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -83,14 +84,14 @@ const Dashboard = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-          Monthly Comparison
+          Yearly Comparison
           </Typography>
           <Typography variant="body2" color="text.secondary">
-          Visualize monthly financial data for easy comparison and informed decision-making.
+          Visualize yearly financial data for easy comparison and informed decision-making.
           </Typography>
         </CardContent>
       </CardActionArea>
-    </Card>
+    </Card></Link>
     </div>
 
       </div>

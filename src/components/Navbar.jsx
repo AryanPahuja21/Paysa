@@ -5,7 +5,6 @@ import {
   Typography,
   Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
  
 export default function StickyNavbar() {
@@ -80,10 +79,11 @@ export default function StickyNavbar() {
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
-            href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium text-2xl font-Logo"
+            href="/"
+            className="mr-4 cursor-pointer py-1.5 font-medium text-2xl font-Logo text-black"
           >
-            Paysa
+            <span className="text-bold">Pay</span>
+            <span className="ml-[3px]">sa</span>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
